@@ -1,0 +1,78 @@
+####################
+#                  #
+# Copiar todo esto #
+#                  #
+####################
+# Hecho con gusto por _______________________________________
+
+# Laboratorio - Análisis de redes en R - Algebra matricial
+
+# Objetivo: Explorar las funciones de algebra lineal con un caso hipotético
+# ------------------------------------------------------------------------------------------------------
+# En este ejercicio vamos a:
+# 1. Cargar nuestra matriz hipotética de datos
+# 2. Hacer diversas operaciones matriciales
+# 3. Comprender el algoritmo base de las recomendaciones de AMAZON
+
+
+#######################################
+# LABORATORIO: Algebra matricial      #
+#######################################
+
+
+M = as.matrix(
+  read.csv("https://raw.githubusercontent.com/PABalland/ON/master/amz.csv" , 
+           sep = ",", 
+           header = T, 
+           row.names = 1))
+
+
+# Es la estructura de red que AMAZON ocupa para hacer recomendaciones en base a tus compras actuales
+
+
+# Ver sólo el vector de clientes que compran el producto "corbata" (producto de la columna 1)
+
+
+#Ver sólo un fragmento de la base original, en relación a los dos productos que me interesan
+#Puede ser útil para explorar clientes y productos
+
+
+# Computar grado de centralidad
+
+
+# función útil para enfocarnos en productos y no sólo en clientes
+
+
+# Suma de matrices
+
+
+
+# Crear nuevo un objeto llamado x
+
+
+
+#multiplicación de matrices checar tamaños
+#checar tamaño de la matriz -dim-
+
+
+
+#El algoritmo de recomendación de AMAZON, hace básicamente lo anterior.
+# para tener el número de veces que 2 productos han sido comprados por el mismo cliente
+#identificar productos que van frecuentemente juntos (co ocurrencias par)
+
+
+
+#similaridad de productos (de gustos) matriz de co ocurrencia de productos
+
+
+
+
+#no es una matriz identidad (como en la correlación) 
+
+
+
+#similaridad de clientes - matriz de co ocurrencia de clienes
+
+
+
+#no es una matriz identidad (como en la correlación) 
