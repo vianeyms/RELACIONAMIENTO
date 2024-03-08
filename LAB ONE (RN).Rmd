@@ -1,0 +1,55 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+Es la estructura de red que AMAZON ocupa para hacer recomendaciones en base a tus compras actuales
+```{r}
+M = as.matrix(
+  read.csv("https://raw.githubusercontent.com/PABalland/ON/master/amz.csv" , 
+           sep = ",", 
+           header = T, 
+           row.names = 1))
+
+M
+
+dim (M)
+```
+Ver s?lo un fragmento de la base original, en relaci?n a los dos productos que me interesan
+```{r}
+M [1:6,1]
+```
+
+Ver s?lo un fragmento de la base original, en relaci?n a los dos productos que me interesan
+```{r}
+M[1:6,1:2]
+
+```
+Computar grado de centralidad
+```{r}
+rowSums(M)
+
+t(M)
+
+M+M
+
+X = M+M
+
+M^2
+
+M * M
+
+M %*% t(M)
+
+t(M) %*% M
+
+P = t (M) %*% M
+
+diag (P) = 0
+
+C= M %*% t(M)
+
+diag (C)=0
+
+```
+
