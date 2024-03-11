@@ -13,8 +13,7 @@ install.packages("ggplot2")
 library(ggplot2)
 
 # leer df
-green_data = read.csv("C:/Users/Vianey/Downloads/REGESIONES FINALES.csv")
-correl =read.csv("C:/Users/Vianey/Downloads/correl.csv")
+leer df
 
 
 # echando un ojo a los datos

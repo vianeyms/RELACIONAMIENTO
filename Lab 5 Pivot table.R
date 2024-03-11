@@ -24,8 +24,9 @@ library(readr)
 
 #CARGAR DATOS
 library(readr)
-tabla1 <- read_csv("DOctorado/Tercer semestre/Dra. Carla temas selectos/laboratorios/ICE 2014.csv")
+tabla1 <- read.csv("C:\Users\Vianey\Desktop/ICE 2014.csv")
 View(ICE_2014)
+
 
 library(readr)
 tabla1 <- read_csv("ice 2014.csv")
